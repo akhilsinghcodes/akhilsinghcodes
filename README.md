@@ -12,6 +12,9 @@ Most AI tooling focuses on the exciting parts. I tend to build the parts underne
 
 ## 🔧 Projects
 
+### 🧩 [agents_fleet](https://github.com/akhilsinghcodes/agents_fleet) · TypeScript
+Local-first “mission control” for AI coding agent CLIs (and any shell commands): launches sessions inside a repo via a local Node/Express server, streams an interactive PTY terminal to a React web UI (xterm.js), and persists session metadata + raw PTY history to SQLite for faithful replay/scrollback — with optional token/USD budget enforcement and a roadmap focused on hardening + per-session artifacts.
+
 ### 🗂️ [local-library-assistant](https://github.com/m-a-singh/local-library-assistant) · Python
 A full RAG pipeline built from scratch — no LangChain, no abstractions. Ingests local files into a canonical `EvidenceUnit` model that preserves source file, structural region, line/char ranges, and adjacency links. SQLite FTS5 lexical retrieval, hybrid semantic retrieval with graceful fallback, and grounded answer synthesis with source citations. Every retrieved chunk knows exactly where it came from.
 
@@ -34,3 +37,4 @@ Rust MCP server exposing local machine capabilities to AI clients over stdin/std
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
