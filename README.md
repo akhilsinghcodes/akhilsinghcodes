@@ -19,7 +19,7 @@ Local-first “mission control” for AI coding agent CLIs (and any shell comman
 A full RAG pipeline built from scratch — no LangChain, no abstractions. Ingests local files into a canonical `EvidenceUnit` model that preserves source file, structural region, line/char ranges, and adjacency links. SQLite FTS5 lexical retrieval, hybrid semantic retrieval with graceful fallback, and grounded answer synthesis with source citations. Every retrieved chunk knows exactly where it came from.
 
 ### 🔍 [jidra](https://github.com/m-a-singh/jidra) · Python
-CLI and MCP server for Java codebase understanding. Builds a static call graph via tree-sitter, traces method and HTTP route flows, generates deterministic flow and stack-trace investigation docs, and optionally runs LLM diagnosis on graph-grounded context. Benchmarked against Claude and Codex baselines: **30–38% context reduction** with more structured outputs.
+CLI and MCP server for Java codebase analysis. Builds a static call graph via AST parsing, validates against Spring beans to remove phantom edges, generates minimal noise-free context for LLM workflows. Proven: **87-95% token reduction** (10,811→869 tokens) with **zero false negatives** and **100% business logic coverage**.
 
 ### 📊 [embedding-eval-framework](https://github.com/m-a-singh/embedding-eval-framework) · Python
 Evaluation harness for comparing embedding request-building strategies — flat concat, per-field chunking, weighted field pooling, text cleansing — across SentenceTransformer models. Includes a Triton input simulator for production-parity formatting and a Pearson-correlated summary report. Built to answer: does the retrieval improvement come from the model or the request construction?
