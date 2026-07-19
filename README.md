@@ -15,14 +15,17 @@ Most AI tooling focuses on the exciting parts. I tend to build the parts underne
 ### 🧩 [agents_fleet](https://github.com/akhilsinghcodes/agents_fleet) · TypeScript
 Local-first “mission control” for AI coding agent CLIs (and any shell commands): launches sessions inside a repo via a local Node/Express server, streams an interactive PTY terminal to a React web UI (xterm.js), and persists session metadata + raw PTY history to SQLite for faithful replay/scrollback — with optional token/USD budget enforcement and a roadmap focused on hardening + per-session artifacts.
 
-### 🗂️ [local-library-assistant](https://github.com/m-a-singh/local-library-assistant) · Python
-A full RAG pipeline built from scratch — no LangChain, no abstractions. Ingests local files into a canonical `EvidenceUnit` model that preserves source file, structural region, line/char ranges, and adjacency links. SQLite FTS5 lexical retrieval, hybrid semantic retrieval with graceful fallback, and grounded answer synthesis with source citations. Every retrieved chunk knows exactly where it came from.
-
 ### 🔍 [jidra](https://github.com/m-a-singh/jidra) · Python
 CLI and MCP server for Java codebase analysis. Builds a static call graph via AST parsing, validates against Spring beans to remove phantom edges, generates minimal noise-free context for LLM workflows. Proven: **87-95% token reduction** (10,811→869 tokens) with **zero false negatives** and **100% business logic coverage**.
 
+### 🛸 [agents_flightdeck](https://github.com/akhilsinghcodes/agents_flightdeck) · TypeScript
+Human-in-the-loop orchestration layer for AI coding agents: scopes exactly what the agent touches via method-level AST search (JIDRA MCP) or blast-radius graph (CodeGraph MCP), generates a per-node task graph with USD budgets enforced at the SDK level, gates execution between every node for human approval, and streams live Claude Agent SDK output to an embedded xterm.js terminal — with a side-by-side git diff captured after each node completes.
+
 ### 📊 [embedding-eval-framework](https://github.com/m-a-singh/embedding-eval-framework) · Python
 Evaluation harness for comparing embedding request-building strategies — flat concat, per-field chunking, weighted field pooling, text cleansing — across SentenceTransformer models. Includes a Triton input simulator for production-parity formatting and a Pearson-correlated summary report. Built to answer: does the retrieval improvement come from the model or the request construction?
+
+### 🗂️ [local-library-assistant](https://github.com/m-a-singh/local-library-assistant) · Python
+A full RAG pipeline built from scratch — no LangChain, no abstractions. Ingests local files into a canonical `EvidenceUnit` model that preserves source file, structural region, line/char ranges, and adjacency links. SQLite FTS5 lexical retrieval, hybrid semantic retrieval with graceful fallback, and grounded answer synthesis with source citations. Every retrieved chunk knows exactly where it came from.
 
 ### 🧠 [local_first_LLM](https://github.com/m-a-singh/local_first_LLM) · Python
 Toolkit for production-grade LLM usage patterns: a LiteLLM wrapper with retry/backoff and typed error taxonomy; a three-stage **Architect → Judge → Polisher** prompt pipeline with faithfulness checking; and an idea-to-epic planner with strict JSON output, schema validation, and auto-repair loop.
