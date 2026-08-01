@@ -18,9 +18,13 @@ Local-first “mission control” for AI coding agent CLIs (and any shell comman
 ### 🔍 [jidra](https://github.com/m-a-singh/jidra) · Python
 CLI and MCP server for Java codebase analysis. Builds a static call graph via AST parsing, validates against Spring beans to remove phantom edges, generates minimal noise-free context for LLM workflows. Proven: **87-95% token reduction** (10,811→869 tokens) with **zero false negatives** and **100% business logic coverage**.
 
+### ⚙️ [localops_mcp_server](https://github.com/m-a-singh/localops_mcp_server) · Rust
+Rust MCP server exposing local machine capabilities to AI clients over stdin/stdout — file I/O, shell execution, system stats, macOS notification triage, port management. Namespaced tool API, path traversal guards, strict command validation, symlink protection, and integration tests.
+
 ---
 
 ## 🛠️ Languages
-
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
