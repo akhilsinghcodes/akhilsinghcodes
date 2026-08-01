@@ -21,6 +21,9 @@ CLI and MCP server for Java codebase analysis. Builds a static call graph via AS
 ### ⚙️ [localops_mcp_server](https://github.com/m-a-singh/localops_mcp_server) · Rust
 Rust MCP server exposing local machine capabilities to AI clients over stdin/stdout — file I/O, shell execution, system stats, macOS notification triage, port management. Namespaced tool API, path traversal guards, strict command validation, symlink protection, and integration tests.
 
+### 🧠 [local_first_LLM](https://github.com/m-a-singh/local_first_LLM) · Python
+Toolkit for production-grade LLM usage patterns: a LiteLLM wrapper with retry/backoff and typed error taxonomy; a three-stage **Architect → Judge → Polisher** prompt pipeline with faithfulness checking; and an idea-to-epic planner with strict JSON output, schema validation, and auto-repair loop.
+
 ---
 
 ## 🛠️ Languages
